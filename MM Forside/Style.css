@@ -1,0 +1,606 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'poppins';
+}
+
+body{
+    background-color: #222;
+}
+
+.box a{
+    color: #f50;
+    text-decoration: none;
+}
+.box2 a{
+    color: #f50;
+    text-decoration: none;
+}.box3 a{
+    color: #f50;
+    text-decoration: none;
+}.box7 a{
+    color: #f50;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%; /* fyld hele browserens højde */
+    display: flex;
+    align-items: center; /* centrer lodret */
+    justify-content: center; /* centrer vandret */
+    /* search bar */
+    align-items: left;
+    justify-content: left;
+}
+
+/* tilpas søgefeltets størrelse */
+.search-bar{
+    position: fixed;
+    top: 145px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+::placeholder{
+    color:#ffffff;
+}
+
+.search-bar button img{
+    width: 21px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #787881;
+    cursor: pointer;
+}
+
+/* video baggrund */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overskift*/
+.content h1{
+    font-size: 95px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -15px;
+    text-align: center;
+    position: relative;
+    left: 28%;
+}
+.content h2{
+    font-size: 35px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -300px;
+    text-align: center;
+    position: relative;
+    left: 28%; 
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* logo i venstre top */
+.logo{
+    position: fixed;
+    height: auto;
+    left: 30px;
+    width: 200px;
+    z-index: 1;
+}
+
+/* Menu box */
+.dropdown{
+    display: inline-block;
+    position: relative;
+    position: fixed;
+    top: 145px;
+    right: 110px;
+    z-index: 10;
+}
+.dropdown button{
+    background-color: #f50;
+    color: white;
+    padding: 19px 80px;
+    border: none;
+    cursor: pointer;
+}
+.content2 a {
+    display: block;
+    color: white;
+    font-family: 'poppins';
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.dropdown .content2 {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    color: white;
+    min-width: 197px;
+    box-shadow: 2px 2px 5px rgb(61, 61, 61);
+}
+
+.dropdown:hover .content2{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: rgb(61, 61, 61);
+}
+.dropdown a:hover{
+    background-color: rgb(79, 78, 78);
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+.search-bar2{
+    flex: 1;
+    align-items: center;
+    flex-grow: 1;
+}
+.menu{
+    margin-left: auto;
+}
+
+/* Nyhedsbrev */
+.container3{
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container3 h2{
+font-size: 20px;
+color: white;
+margin-bottom: 15px;
+}
+
+.container3 .email input{
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 18px;
+    outline: none;
+    font-family: 'poppins';
+    border-radius: 50px;
+    border: 2px solid #f50;
+}
+
+.container3 .email .icon{
+    position: relative;
+    left: 80px;
+    top: 50%;
+    font-size: 18px;
+}
+
+.container3 .email button{
+    position:  absolute;
+    top: 53%;
+    right: -33px;
+    padding: 6px 15px;
+    cursor: pointer;
+    border-radius: 55px;
+    border: 4px solid gray;
+    outline: none;
+    background: #787881;
+    color: #ffffff;
+}
+
+.container3 .email button:hover{
+    background: #9b9ba5;
+}
+
+.tilmeld{
+    background-color: #222;
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.artikel1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+
+.artikel1 h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: 15%;
+}
+
+.tekst{
+    width: 87%;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 60px;
+    }
+
+.box{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -200px;
+    height: 210px;
+    width: 1457px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+    justify-content: space-between;
+}
+.box img{
+    width: 12%;
+    height: auto;
+    margin-right: -50px;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+.tekst2{
+width: 80%;
+text-align: center;
+padding-right: 50px;
+padding-top: 60px;
+}
+
+.box2{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -150px;
+    height: 210px;
+    width: 1457px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+    justify-content: space-between;
+}
+.box2 img{
+    width: 12%;
+    height: 178px;
+    margin-right: -50px;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+.tekst3{
+    width: 87%;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 60px;
+    }
+
+.box3{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -100px;
+    height: 180px;
+    width: 1457px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+    justify-content: space-between;
+}
+.box3 img{
+    width: 12%;
+    height: 150px;
+    margin-right: -50px;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+
+.artikel2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+
+.artikel2 h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: 15%;
+}
+
+.samlet{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.samlet .h1{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+}
+
+.box4{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -200px;
+    height: 780px;
+    width: 600px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+}
+.box4 img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+.box5{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -200px;
+    height: 780px;
+    width: 600px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+}
+.box5 img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.box6{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -185px;
+    height: 780px;
+    width: 600px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+}
+.box6 img{
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.artikel3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+
+.artikel3 h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 500px;
+    text-align: center;
+    position: relative;
+    margin-top: 15%;
+}
+
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box7{
+    font-size: 1em;
+    background-color: #222;
+    color: #fff;
+    /* box model */
+    top: -200px;
+    height: 800px;
+    width: 1000px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding: 32px 64px 100px 10px;
+    border: 2px solid #f50;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 20px 40px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Flexbox for at placere indholdet side om side */
+    display: flex;
+    align-items: center; /* centrere indholdet vertikalt */
+}
+.box7 img{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
